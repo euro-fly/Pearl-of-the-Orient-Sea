@@ -1,0 +1,24 @@
+﻿# NOTE: This is all based on... contemporary demographics. Could be totally wrong.
+STATES = {
+	s:STATE_MINDANAO = {
+		remove_homeland = filipino
+		add_homeland = cebuano
+		add_homeland = lumad
+	}
+	s:STATE_LUZON = {
+		remove_homeland = filipino
+		remove_homeland = moro
+		add_homeland = tagalog
+		add_homeland = ilocano
+		add_homeland = cordilleran
+		add_homeland = palaweno
+	}
+	s:STATE_VISAYAS = {
+		remove_homeland = filipino
+		remove_homeland = moro
+		add_homeland = hiligaynon
+		add_homeland = negrense
+		add_homeland = cebuano
+		
+	}
+}

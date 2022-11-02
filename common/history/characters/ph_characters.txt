@@ -1,0 +1,15 @@
+CHARACTERS = {
+	c:PHI = {
+		create_character = {
+			# José Maria Seguí Molas, archbishop of Manila from 1830 to 1845
+			first_name = "Jose_Maria"
+			last_name = "Segui_Molas"
+			ruler = yes
+			birth_date = 1773.10.03
+			culture = cu:spanish
+			ig_leader = yes
+			interest_group = ig_devout
+			ideology = ideology_moderate
+		}
+	}
+}

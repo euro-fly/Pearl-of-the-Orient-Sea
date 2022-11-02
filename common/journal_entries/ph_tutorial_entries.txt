@@ -1,0 +1,282 @@
+﻿je_ph_propaganda_movement_main = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	immediate = {
+		add_journal_entry = { type = je_ph_reign_of_greed }
+		add_journal_entry = { type = je_ph_social_cancer }
+		add_journal_entry = { type = je_ph_triumph_of_science }
+	}
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = ph_propaganda.2
+		}
+	}
+
+	timeout = 7300
+
+	on_timeout = {
+		trigger_event = {
+			id = ph_propaganda.3
+		}
+	}
+
+	current_value = {
+		value = var:ph_propaganda_movement_var
+	}
+
+	goal_add_value = {
+		add = 3
+	}
+
+	progressbar = yes
+
+	weight = 1
+	should_be_pinned_by_default = yes
+}
+
+je_ph_reign_of_greed = {
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+		has_law = law_type:law_slavery_banned
+		has_law = law_type:law_multicultural
+		OR = {
+			has_law = law_type:law_wealth_voting
+			has_law = law_type:law_census_voting
+			has_law = law_type:law_universal_suffrage
+		}
+		OR = {
+			has_law = law_type:law_rights_of_assembly
+			has_law = law_type:law_protected_speech
+		}
+		OR = {
+			has_law = law_type:law_per_capita_based_taxation
+			has_law = law_type:law_proportional_taxation
+			has_law = law_type:law_graduated_taxation
+		}
+		is_at_war = no
+		NOT = {
+			any_interest_group = {
+				is_insurrectionary = yes
+			}
+		}
+	}
+	
+	is_progressing = {
+		OR = {
+			is_enacting_law = law_type:law_multicultural
+			is_enacting_law = law_type:law_public_schools
+			is_enacting_law = law_type:law_protected_speech
+			is_enacting_law = law_type:law_right_of_assembly
+			is_enacting_law = law_type:law_per_capita_based_taxation
+			is_enacting_law = law_type:law_proportional_taxation
+			is_enacting_law = law_type:law_graduated_taxation
+			is_enacting_law = law_type:law_wealth_voting
+			is_enacting_law = law_type:law_census_voting
+			is_enacting_law = law_type:law_universal_suffrage
+		}
+	}
+	
+	on_complete = {
+		trigger_event = {
+			id = ph_propaganda.5
+		}
+	}
+	
+	weight = 5000
+	progressbar = yes
+}
+
+je_ph_triumph_of_science = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	complete = {
+		c:PHI = { 
+			any_scope_building = {
+				is_building_type = building_university
+				level >= 5
+				occupancy >= 0.9
+			}
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level >= 5
+				occupancy >= 0.9
+			}
+
+		}
+		OR = { 
+			has_law = law_type:law_private_schools
+			has_law = law_type:law_public_schools
+		}
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+		is_at_war = no
+		NOT = {
+			any_interest_group = {
+				is_insurrectionary = yes
+			}
+		}
+	}
+	
+	is_progressing = {
+		OR = {
+			expanding_institution = institution_schools
+			is_enacting_law = law_type:law_private_schools
+			is_enacting_law = law_type:law_public_schools
+			any_scope_building = {
+				OR = {
+					is_building_type = building_university
+					is_building_type = building_arts_academy
+				}
+				is_under_construction = yes
+			}
+		}
+	}
+	
+	on_complete = {
+		trigger_event = {
+			id = ph_propaganda.4
+		}
+
+	}
+	weight = 5000
+	progressbar = yes
+}
+
+je_ph_social_cancer = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	complete = {
+		ig:ig_devout = {
+			is_powerful = no
+			is_in_government = no
+		}
+		OR = {
+			has_law = law_type:law_right_of_assembly
+			has_law = law_type:law_protected_speech
+		}
+		any_scope_building = {
+			filter = {
+				is_building_type = building_urban_center
+			}
+			percent = 1.0
+			occupancy > 0.75
+			weekly_profit > 0
+			level >= 5
+			has_active_production_method = pm_free_urban_clergy
+		}
+		any_scope_building = {
+			filter = {
+				is_building_type = building_government_administration
+			}
+			percent = 1.0
+			occupancy > 0.75
+			weekly_profit > 0
+			level >= 5
+			has_active_production_method = pm_secular_bureaucrats
+		}
+		
+		is_at_war = no
+		NOT = {
+			any_interest_group = {
+				is_insurrectionary = yes
+			}
+		}
+		
+	}
+	
+	on_complete = {
+		trigger_event = {
+			id = ph_propaganda.6
+		}
+	}
+	weight = 5000
+	progressbar = yes
+}
+
+je_ph_propaganda_movement_suppress = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	possible = {
+		NOT = {
+			has_variable = suppressing_propaganda_complete
+		}
+	}
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = ph_propaganda.8
+		}
+	}
+
+	timeout = 7300
+
+	on_timeout = {
+		trigger_event = {
+			id = ph_propaganda.9
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			name = suppressing_propaganda_var
+			value = 0
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					ig:ig_intelligentsia = {
+						is_powerful = no
+						OR = {
+							is_marginal = yes
+							AND = {
+								is_being_suppressed = yes
+								ig_clout < 0.20
+							}
+						}
+					}
+					has_insurrectionary_interest_groups = no
+					is_at_war = no
+				}
+				change_variable = {
+					name = suppressing_propaganda_var
+					add = 1
+				}
+			}
+		}
+	}
+
+
+	current_value = {
+		value = var:suppressing_propaganda_var
+	}
+
+	goal_add_value = {
+		add = 180
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}

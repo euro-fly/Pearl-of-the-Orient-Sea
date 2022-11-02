@@ -1,0 +1,13 @@
+﻿l_english:
+ je_ph_propaganda_movement_main:0 "The Propaganda Movement"
+ je_ph_propaganda_movement_main_goal:0 "Complete 3 'Propaganda Movement' [Concept('concept_journal_entry', '$concept_journal_entries$')]"
+ je_ph_propaganda_movement_main_reason:0 "A new nationalist movement led by the [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] has called for a series of drastic reforms to be made. While these self-proclaimed Propagandistas have not yet made any direct moves against our government, their honeyed words of a better life have caught on with the populace. If we do not act, we may have a revolution on our hands."
+ je_ph_reign_of_greed:0 "The Propaganda Movement: Legal Equality"
+ je_ph_reign_of_greed_goal:0 "Improve our legal framework by enacting the requested policies."
+ je_ph_reign_of_greed_reason:0 "Our legal system and economy reflect outdated feudal mores, this much is clear. The [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] demand that we put a stop to this and guarantee basic rights and freedoms for everyone."
+ je_ph_social_cancer:0 "The Propaganda Movement: Secular Clergy"
+ je_ph_social_cancer_goal:0 "Ensure religious freedoms for all."
+ je_ph_social_cancer_reason:0 "The centuries of injustice perpetrated by the [SCOPE.gsInterestGroup('devout_ig').GetName] have rightfully been called a social cancer by the [SCOPE.gsInterestGroup('intelligentsia_ig').GetName]. They demand that we secularize the clergy and promote religious equality."
+ je_ph_triumph_of_science:0 "The Propaganda Movement: The Triumph of Science"
+ je_ph_triumph_of_science_goal:0 "Improve our educational framework."
+ je_ph_triumph_of_science_reason:0 "The [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] have pointed out that ignorance and superstition have been used by our colonial overlords to keep the local population in check. They demand that we reform our educational infrastructure to prove our worth to the Europeans."

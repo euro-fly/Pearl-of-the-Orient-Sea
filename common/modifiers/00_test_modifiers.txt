@@ -1,0 +1,27 @@
+﻿failed_propaganda_movement_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -4
+}
+
+bandala_system_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_agriculture_throughput_mult = -0.1
+}
+
+polo_y_servicio_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+}
+
+decree_let_them_riot = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	state_radicals_from_discrimination_mult = 0.25
+	state_loyalists_from_sol_change_mult = 0.25
+}
+
+decree_put_the_riot_down = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	state_radicals_from_discrimination_mult = 0.1
+	state_radicals_from_sol_change_mult = 0.1
+	state_mortality_mult = 0.1
+}
+

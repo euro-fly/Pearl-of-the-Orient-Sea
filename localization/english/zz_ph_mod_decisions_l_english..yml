@@ -1,0 +1,6 @@
+﻿l_english:
+ #TUTORIAL: Replace tutorial_decision with your decision's name
+ #TUTORIAL: Replace the text between the strings (" ") with the decision's name, then the decision's description
+ proclaim_tagalog_identity:0 "Proclaim Filipino identity"
+ proclaim_tagalog_identity_desc:0 "After centuries of division by doctrine, it is time we came together in unity. Whether we may be indio, mestizo, or insular, we are all children of the Philippines, and we shall no longer abide the colonial jackboot."
+ 
