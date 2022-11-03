@@ -5,6 +5,6 @@
 	
 	tier = kingdom
 	
-	cultures = { insular }
+	cultures = { insular mestizo }
 	capital = STATE_LUZON
 }
