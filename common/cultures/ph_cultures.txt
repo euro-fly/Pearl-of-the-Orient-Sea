@@ -162,10 +162,11 @@ tagalog={
 }
 
 # Strictly speaking, 'mestizo filipino', as in anyone of both Spanish and indigenous Philippine descent
+# 
 mestizo={
 	color= hsv{ 0.18 0.56 0.86 }
 	religion = catholic
-	traits = { european_heritage malay_culture philippine_culture_group }
+	traits = { european_heritage malay_culture philippine_culture_group sinosphere }
 	male_common_first_names={
 		Andres
 		Antonio
@@ -1661,7 +1662,7 @@ palaweno={
 	}
 	custom_tooltip = tagalog_tooltip
 }
-ilonggo={
+hiligaynon={
 	color= hsv{ 0.18 0.56 0.86 }
 	religion = dayawist
 	traits = { southeast_asian_heritage malay_culture philippine_culture_group }
