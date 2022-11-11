@@ -27,6 +27,7 @@ ph_propaganda.2 = {
 			change_subject_type = subject_type_dominion
 			set_country_type = recognized  # We're not a colony, we're a full province with diplomatic autonomy
 		}
+		default_option = yes
 	}
 
 	option = {
@@ -38,7 +39,7 @@ ph_propaganda.2 = {
 			}
 		}
 		create_diplomatic_play = {
-			target_country: scope:overlord_country
+			target_country = scope:overlord_country
 			type = dp_independence
 		}
 

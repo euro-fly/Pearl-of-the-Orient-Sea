@@ -49,7 +49,7 @@ ph_propaganda_random.1 = {
 	option = {
         # Devout approval down, rural folk approval up
 		name = ph_propaganda_random.1.a
-		#default_option = yes
+		default_option = yes
 		scope:crispin = {
             kill_character = yes
         }

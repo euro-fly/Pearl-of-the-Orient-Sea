@@ -154,19 +154,18 @@ tagalog={
 		Ponce
 		Rivera
 	}
-	graphics = asian
 	ethnicities = {
 		1 = south_east_asian
 	}
-	custom_tooltip = tagalog_tooltip
+	graphics = asian
 }
 
 # Strictly speaking, 'mestizo filipino', as in anyone of both Spanish and indigenous Philippine descent
-# 
+# Also modeled here as being Han to represent the Sangleys 
 mestizo={
 	color= hsv{ 0.18 0.56 0.86 }
 	religion = catholic
-	traits = { european_heritage malay_culture philippine_culture_group sinosphere }
+	traits = { european_heritage malay_culture philippine_culture_group han_chinese }
 	male_common_first_names={
 		Andres
 		Antonio
@@ -310,12 +309,11 @@ mestizo={
 		Aranguren
 		Ponce
 	}
-	graphics = asian
 	ethnicities = {
 		1 = south_east_asian
 		2 = south_american
 	}
-	custom_tooltip = mestizo_tooltip
+	graphics = asian
 }
 
 # Referring to the 'insulares', as in Spaniards born in Spain.
@@ -705,10 +703,11 @@ cordilleran={
 		Ponce
 		Rivera
 	}
-	graphics = asian
 	ethnicities = {
 		1 = south_east_asian
 	}
+	graphics = asian
+
 }
 visayan={
 	color= hsv{ 0.18 0.56 0.86 }
@@ -863,10 +862,11 @@ visayan={
 		Ponce
 		Rivera
 	}
-	graphics = asian
 	ethnicities = {
 		1 = south_east_asian
 	}
+	graphics = asian
+
 }
 lumad={
 	color= hsv{ 0.18 0.56 0.86 }
@@ -1021,10 +1021,10 @@ lumad={
 		Ponce
 		Rivera
 	}
-	graphics = asian
 	ethnicities = {
 		1 = south_east_asian
 	}
+	graphics = asian
 }
 ilocano={
 	color= hsv{ 0.18 0.56 0.86 }
@@ -1179,11 +1179,11 @@ ilocano={
 		Ponce
 		Rivera
 	}
-	graphics = asian
 	ethnicities = {
 		1 = south_east_asian
 	}
-	custom_tooltip = tagalog_tooltip
+	graphics = asian
+
 }
 negrense={
 	color= hsv{ 0.18 0.56 0.86 }
@@ -1338,11 +1338,11 @@ negrense={
 		Ponce
 		Rivera
 	}
-	graphics = asian
+	
 	ethnicities = {
 		1 = south_east_asian
 	}
-	custom_tooltip = tagalog_tooltip
+	graphics = asian
 }
 cebuano={
 	color= hsv{ 0.18 0.56 0.86 }
@@ -1497,11 +1497,10 @@ cebuano={
 		Ponce
 		Rivera
 	}
-	graphics = asian
 	ethnicities = {
 		1 = south_east_asian
 	}
-	custom_tooltip = tagalog_tooltip
+	graphics = asian
 }
 palaweno={
 	color= hsv{ 0.18 0.56 0.86 }
@@ -1656,11 +1655,11 @@ palaweno={
 		Ponce
 		Rivera
 	}
-	graphics = asian
 	ethnicities = {
 		1 = south_east_asian
 	}
-	custom_tooltip = tagalog_tooltip
+	graphics = asian
+
 }
 hiligaynon={
 	color= hsv{ 0.18 0.56 0.86 }
@@ -1815,10 +1814,9 @@ hiligaynon={
 		Ponce
 		Rivera
 	}
-	graphics = asian
 	ethnicities = {
 		1 = south_east_asian
 	}
-	custom_tooltip = tagalog_tooltip
+	graphics = asian
 }
 
