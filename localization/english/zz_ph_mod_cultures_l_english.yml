@@ -1,0 +1,14 @@
+﻿l_english:
+ tagalog:0 "Tagalog" # dominant ethnic group politically, in/around manila
+ insular:0 "Hispano-Filipino" # spanish criollos born in the philippines (and possibly later, an assimilated filipino people)
+ mestizo:0 "Philippine Mestizo"  # mixed-race with both spaniard and indigenous blood
+ philippine_culture_group:0 "Philippine" 
+ visayan:0 "Visayan"  # not a distinct ethnic group, but a common identifier for the inhabitants of the Visayas region
+ cebuano:0 "Cebuano"  # dominant ethnic group in the visayas region
+ negrense:0 "Negrense"  # dominant ethnic group in the islands of negros oriental/occidental
+ lumad:0 "Lumad"  # indigenous mindanaoans
+ cordilleran:0 "Cordilleran"  # Commonly known as the 'Igorot', indigenous luzon peoples
+ ilocano:0 "Ilocano"  # dominant ethnic group to the north of manila
+ palaweno:0 "Palaweño"
+ hiligaynon:0 "Hiligaynon"
+ 

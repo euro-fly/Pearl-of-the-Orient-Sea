@@ -1,0 +1,10 @@
+﻿PHI = {
+	color = { 92 87 122 }
+	
+	country_type = colonial
+	
+	tier = kingdom
+	
+	cultures = { insular }
+	capital = STATE_LUZON
+}

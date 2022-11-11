@@ -1,0 +1,72 @@
+namespace = ph_propaganda_random
+
+# Sisa and Crispin
+ph_propaganda_random.1 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = ph_propaganda_random.1.t
+	desc = ph_propaganda_random.1.d
+	flavor = ph_propaganda_random.1.f
+	duration = 3
+
+	gui_window = event_window_2char
+
+	left_icon = scope:salvi
+	right_icon = scope:crispin
+
+	immediate = {
+		create_character = {
+			first_name = "Bernardo"
+            last_name = "Salvi"
+			age = 50
+			interest_group = ig_devout
+			culture = cu:insular
+			save_scope_as = salvi
+		}
+		
+		create_character = {
+			first_name = "Crispin"
+			age = 4
+            interest_group = ig_rural_folk
+            culture = cu:tagalog
+			save_scope_as = crispin
+		}
+        
+        ig:ig_devout = {
+			save_scope_as = devout_ig
+		}
+
+        ig:ig_rural_folk = {
+			save_scope_as = rural_folk_ig
+		}
+	}
+
+	option = {
+        # Devout approval down, rural folk approval up
+		name = ph_propaganda_random.1.a
+		#default_option = yes
+		scope:crispin = {
+            kill_character = yes
+        }
+        scope:salvi = {
+            kill_character = yes
+        }
+	}
+
+    option = {
+        # Rural folk approval down, devout ap[proval up
+		name = ph_propaganda_random.1.b
+		#default_option = yes
+		scope:crispin = {
+            kill_character = yes
+        }
+        scope:salvi = {
+            kill_character = yes
+        }
+	}
+}

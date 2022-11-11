@@ -1,0 +1,12 @@
+BUILDINGS={
+	s:STATE_LUZON={
+		region_state:PHI={
+			create_building={  # University of Santo Tomas was already founded in the 17th century
+				building="building_university"
+				level=1
+				reserves=1
+				activate_production_methods={ "pm_scholastic_education" }
+			}	
+		}
+	}
+}

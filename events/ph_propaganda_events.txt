@@ -1,0 +1,430 @@
+﻿namespace = ph_propaganda
+
+# Propaganda Movement succeeds
+ph_propaganda.2 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	title = ph_propaganda.2.t
+	desc = ph_propaganda.2.d
+	flavor = ph_propaganda.2.f
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = ph_propaganda.2.a
+		this = {
+			change_subject_type = subject_type_dominion
+			set_country_type = recognized  # We're not a colony, we're a full province with diplomatic autonomy
+		}
+	}
+}
+
+# Propaganda Movement fails
+ph_propaganda.3 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	title = ph_propaganda.3.t
+	desc = ph_propaganda.3.d
+	flavor = ph_propaganda.3.f
+	duration = 3
+
+	gui_window = event_window_2char
+
+	left_icon = scope:bonifacio
+	right_icon = scope:aguinaldo
+
+
+	immediate = {
+		create_character = {
+			first_name = "Andres"
+			last_name = "Bonifacio"
+			age = 28
+			interest_group = ig_trade_unions
+			ideology = ideology_radical
+			culture = cu:tagalog
+			ig_leader = yes
+			traits = {
+				persistent
+				tactful
+			}
+			save_scope_as = bonifacio
+		}
+		
+		create_character = {
+			first_name = "Emilio"
+			last_name = "Aguinaldo"
+			age = 23  # ~5 years Bonifacio's junior?
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_radical
+			culture = cu:tagalog
+			ig_leader = yes
+			traits = {
+				ambitious
+				imperious
+			}
+			save_scope_as = aguinaldo
+		}	
+	}
+
+	option = {
+		name = ph_propaganda.3.a
+		#default_option = yes
+		add_radicals = { # People are angry...
+			value = large_radicals
+			any_scope_culture = {
+				has_discrimination_trait = philippine_culture_group
+			}
+		}	
+
+		set_country_type = unrecognized  # We publicly said we were going to embrace the reforms but messed up
+	}
+}
+
+# Triumph of science
+ph_propaganda.4 = {
+	type = country_event
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_art_gallery.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	title = ph_propaganda.4.t
+	desc = ph_propaganda.4.d
+	flavor = ph_propaganda.4.f
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = ph_propaganda.4.a
+		change_variable = {
+			name = ph_propaganda_movement_var
+			add = 1
+		}
+	}
+}
+
+# Equality between people
+ph_propaganda.5 = {
+	type = country_event
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_world_fair.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	title = ph_propaganda.5.t
+	desc = ph_propaganda.5.d
+	flavor = ph_propaganda.5.f
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = ph_propaganda.5.a
+		
+		#default_option = yes
+		change_variable = {
+			name = ph_propaganda_movement_var
+			add = 1
+		}
+		
+	}
+}
+
+# Secularize the clergy
+ph_propaganda.6 = {
+	type = country_event
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	title = ph_propaganda.6.t
+	desc = ph_propaganda.6.d
+	flavor = ph_propaganda.6.f
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = ph_propaganda.6.a
+		
+		#default_option = yes
+		change_variable = {
+			name = ph_propaganda_movement_var
+			add = 1
+		}
+	}
+}
+
+# Propaganda Movement begins
+ph_propaganda.7 = {
+	type = country_event
+	
+	event_image = {
+		video = "gfx/event_pictures/southamerica_election.bk2"
+	}
+
+	placement = scope:solidaridad_publishing_state
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	gui_window = event_window_1char_tabloid
+	
+	left_icon = scope:propagandista
+
+	title = ph_propaganda.7.t
+	desc = ph_propaganda.7.d
+	flavor = ph_propaganda.7.f
+
+	duration = 3
+
+	trigger = {
+		exists = c:PHI
+		c:PHI = ROOT
+		top_overlord = {
+			country_is_in_europe = yes
+		}
+		is_subject_type = subject_type_puppet
+		NOT = { has_variable = ph_propaganda_movement_var }
+		ig:ig_intelligentsia = {
+			is_marginal = no
+			is_in_government = yes
+		}
+		has_technology_researched = nationalism
+	}
+	
+	immediate = {
+		random_list = {
+			25 = {
+				set_variable = is_plaridel
+			}
+			25 = {
+				set_variable = is_jaena
+			}
+			25 = {
+				set_variable = is_rizal
+			}
+			25 = {}
+		}
+		random_country = {
+			limit = {
+				owner = {
+					country_is_in_europe = yes
+					country_rank >= rank_value:minor_power
+				}
+			}
+			save_scope_as = solidaridad_publishing_country
+		}
+		random_state = {
+			limit = {
+				is_capital = yes
+				owner = scope:solidaridad_publishing_country
+			}
+			save_scope_as = solidaridad_publishing_state
+		}
+
+		random_scope_culture = {
+			limit = { 
+				has_discrimination_trait = philippine_culture_group 
+				NOT = {
+					is_primary_culture_of = ROOT
+				}
+			}
+			save_scope_as = solidaridad_founder_culture
+		}
+		
+		if = {
+			limit = {
+				has_variable = is_plaridel
+			}
+			create_character = { # TODO: FIGURE OUT HOW TO RANDOMLY CREATE A CHARACTER FROM A LIST
+				first_name = "Marcelo"
+				last_name = "del_Pilar"
+				culture = scope:solidaridad_founder_culture
+				interest_group = ig_intelligentsia
+				ideology = ideology_reformer
+				ig_leader = yes
+				save_scope_as = propagandista
+			}
+			remove_variable = is_plaridel
+		}
+		else_if = {
+			limit = {
+				has_variable = is_jaena
+			}
+			create_character = { # TODO: FIGURE OUT HOW TO RANDOMLY CREATE A CHARACTER FROM A LIST
+				first_name = "Graciano"
+				last_name = "Lopez_Jaena"
+				culture = scope:solidaridad_founder_culture
+				interest_group = ig_intelligentsia
+				ideology = ideology_reformer
+				ig_leader = yes
+				save_scope_as = propagandista
+			}
+			remove_variable = is_jaena
+		}
+		else_if = {
+			limit = {
+				has_variable = is_rizal
+			}
+			create_character = {
+				first_name = "Jose"
+				last_name = "Rizal"
+				culture = scope:solidaridad_founder_culture
+				interest_group = ig_intelligentsia
+				ideology = ideology_reformer
+				ig_leader = yes
+				save_scope_as = propagandista
+			}
+			remove_variable = is_rizal
+		}
+		else = {
+			create_character = {
+				culture = scope:solidaridad_founder_culture
+				interest_group = ig_intelligentsia
+				ideology = ideology_reformer
+				ig_leader = yes
+				save_scope_as = propagandista
+			}
+		}
+		
+	}
+
+	option = {
+		default_option = yes
+		name = ph_propaganda.7.a
+		custom_tooltip = ph_propaganda_support_tooltip
+		add_journal_entry = { type = je_ph_propaganda_movement_main }
+	}
+	
+	option = {
+		name = ph_propaganda.7.b
+		custom_tooltip = ph_propaganda_suppress_tooltip
+		scope:propagandista = {
+			kill_character = yes
+		}
+		add_journal_entry = { type = je_ph_propaganda_movement_suppress }
+	}
+}
+
+ph_propaganda.8 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/southamerica_election.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	title = ph_propaganda.8.t
+	desc = ph_propaganda.8.d
+	flavor = ph_propaganda.8.f
+
+	option = {
+		default_option = yes
+		name = ph_propaganda.8.a
+	}
+}
+
+ph_propaganda.9 = {
+	type = country_event
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	gui_window = event_window_2char
+
+	left_icon = scope:bonifacio
+	right_icon = scope:aguinaldo
+
+	title = ph_propaganda.9.t
+	desc = ph_propaganda.9.d
+	flavor = ph_propaganda.9.f
+
+	immediate = {
+		create_character = {
+			first_name = "Andres"
+			last_name = "Bonifacio"
+			age = 28
+			interest_group = ig_trade_unions
+			ideology = ideology_radical
+			culture = cu:tagalog
+			ig_leader = yes
+			traits = {
+				persistent
+				tactful
+			}
+			save_scope_as = bonifacio
+		}
+		
+		create_character = {
+			first_name = "Emilio"
+			last_name = "Aguinaldo"
+			age = 23  # ~5 years Bonifacio's junior?
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_radical
+			culture = cu:tagalog
+			ig_leader = yes
+			traits = {
+				ambitious
+				imperious
+			}
+			save_scope_as = aguinaldo
+		}
+	}
+
+	option = {
+		default_option = yes
+		name = ph_propaganda.9.a
+		add_radicals = { # People are angry...
+			value = large_radicals
+			any_scope_culture = {
+				has_discrimination_trait = philippine_culture_group
+			}
+		}
+		set_country_type = unrecognized  # We publicly said we were going crush the reformists but couldn't do it
+	}
+
+}

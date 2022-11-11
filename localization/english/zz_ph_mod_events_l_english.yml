@@ -1,0 +1,61 @@
+﻿l_english:
+ ph_propaganda.2.t:0 "Children of the Nation"
+ ph_propaganda.2.d:0 "For three centuries have we languished in the shadow of Europe, doomed to be but a pawn in the affairs of our colonial masters. With our efforts at modernizing [SCOPE.GetRootScope.GetCountry.GetName] having borne fruit, the time has finally come for us, a single [ROOT.GetCountry.GetAdjective] nation, to claim our rightful place in the sun. \n\nThe question remains, however, on how we plan to greet this new dawn."
+ ph_propaganda.2.a:0 "With arms open."
+ ph_propaganda.2.b:0 "With arms drawn."
+ ph_propaganda.2.f:0 "“After three centuries and a half, the artists of the West, to whom we have submitted everything, have only been able to produce crude scribbles, mere caricatures. If only those who had perished in the night could have lived to see the fools we have made of them, to see what we have accomplished in less than one.”"
+ ph_propaganda_reformist_ending_tooltip:0 "We will rest on our laurels, enjoying this new chapter as equal citizens."
+ ph_propaganda_continue_revolution_tooltip:0 "We will assert our independence from our overlords once and for all."
+ 
+ # A play on the opening phrase of the English TL of the national anthem, 'land of the morning'
+ ph_propaganda.3.t:0 "A Land, in Mourning"
+ ph_propaganda.3.d:0 "The tragic failure of the reformist movement has made cynics of believers, and avengers of the oppressed. The elites of old Europe look on us with derision, at how grossly our grasp has extended our reach."
+ # Adapted from an El Fili quote from Padre Florentine
+ ph_propaganda.3.a:0 "The persecution of tyrants is providence, after all."
+ # Adapted from an El Fili quote from Simoun
+ ph_propaganda.3.f:0 "“Soon, there shall come an explosion to tear down this monument to tyranny. We can only hope that those who live to see the sun shine over our battered bodies against the rocks are not the tyrants of tomorrow.”"
+ 
+ ph_propaganda.4.t:0 "The Propaganda Movement: Highest Hopes" 
+ ph_propaganda.4.d:0 "It was not too long ago that it was only by rating ourselves by Western standards that we could call ourselves educated. Our academic excellence has made it so that our peers in Asia now look to us as the standard to follow."
+ ph_propaganda.4.a:0 "We stand on the shoulders of giants."
+ ph_propaganda.4.f:0 "“If wisdom is the patrimony of mankind, we have finally earned our fair share.”"
+ 
+ ph_propaganda.5.t:0 "The Propaganda Movement: Honorable Courts and Judges"
+ ph_propaganda.5.d:0 "While our government is yet imperfect, it is a far cry from the self-serving administration forced upon us centuries ago. Our legal system now reflects what we once thought a mere dream: equal justice for all citizens of [SCOPE.GetRootScope.GetCountry.GetName], no matter their language or heritage."
+ ph_propaganda.5.a:0 "Let freedom reign!"
+ ph_propaganda.5.f:0 "“By instituting a modern legal code, we hope to demonstrate to the world that we are not their inferiors. In taking this first step toward example, will now encourage those who fear to even begin.”"
+ 
+ ph_propaganda.6.t:0 "The Propaganda Movement: Fellowship of Equals"
+ ph_propaganda.6.d:0 "The institution of a formally secular clergy within our nation has, in many ways, reduced the influence wielded by the [SCOPE.gsInterestGroup('devout_ig').GetName]. No longer can they use the name of God to flagrantly disrespect the rights of any man, woman, or child who calls these islands home."
+ ph_propaganda.6.a:0 "We are all but flesh, made in the image of God as equals."
+ ph_propaganda.6.f:0 "“It is undoubtedly self-evident that a native clergy has proven itself to be of great utility. Let the prelates of Manila, nay, of all the islands of the Philippines thus ensure, with all diligence, that a clergy led for and by the local population be encouraged with the utmost enthusiasm.”"
+
+ ph_propaganda.7.t:0 "The Propaganda Movement: Solidarity"
+ ph_propaganda.7.d:0 "Articles alleging our gross mistreatment of the native people of [SCOPE.GetRootScope.GetCountry.GetName] have been published in a [SCOPE.sCountry('solidaridad_publishing_country').GetAdjective] newspaper.\n\n[SCOPE.sCharacter('propagandista').GetFullName] and other members of the so-called 'Propaganda Movement' aim to pressure us into enacting a set of sweeping reforms by appealing to our overlords and their peers in Europe. We must decide on what to do with this movement one way or another, or risk humiliation in the eyes of the world."
+ ph_propaganda.7.a:0 "Let us lend this [SCOPE.sCharacter('propagandista').GetManWoman] our full support."
+ ph_propaganda.7.b:0 "Sounds like these upstarts wish to bite the hand that feeds them."
+ ph_propaganda.7.f:0 "“By putting forth this publication, it is my most fervent hope that our distant rulers are able to see that it is in all of our best interests to alleviate the plight of the [SCOPE.GetRootScope.GetCountry.GetAdjective] people with the utmost haste. Indeed, I pray to God Himself every night that our masters see reason, while my countrymen still believe that their suffering may yet be remedied through peaceful means.”"
+ ph_propaganda_support_tooltip:0 "We will lend the Propaganda Movement our assistance and agree to enact the demanded reforms."
+ ph_propaganda_suppress_tooltip:0 "We will ensure that these Propagandistas stay irrelevant by suppressing them however possible."
+ 
+ ph_propaganda.8.t:0 "The Propaganda Movement: Status Quo"
+ ph_propaganda.8.d:0 "It seemed like only yesterday that the murmurs of [SCOPE.sCharacter('propagandista').GetFullName] and [SCOPE.sCharacter('propagandista').GetHisHer] ilk were inescapable, and it had felt like it was only a matter of time for the other shoe to drop. In spite of their seditious whispering, however, we have managed to weather the storm and hold [SCOPE.GetRootScope.GetCountry.GetName] together."
+ ph_propaganda.8.a:0 "The people do not complain, because they have no voice."
+ ph_propaganda.8.f:0 "“It is with a heavy heart we must announce that we are suspending our publication effective immediately. Through the circulation of this paper, we wished dearly to see our words carry on to give rise to a nation of equals, the stringent efforts of reactionaries at home and abroad have forced our hand. Though we know not the day or the hour of our return, our most fervent wish remains as ever: the liberation of a land and her people long kept in bondage. To that end, no sacrifice is too small, and no struggle devoid of meaning.“"
+
+ ph_propaganda.9.t:0 "The Propaganda Movement: Mane, Thecel, Phares"
+ ph_propaganda.9.d:0 "Try though we might, our attempt at keeping the peace in [SCOPE.GetRootScope.GetCountry.GetName] were in vain. Despite our best efforts, all we have to show for them is our continued inability to keep the restless locals in place. Government officials point fingers at each other, blaming this or that initiative. Though the halls of government are rife with confusion, one thing is clear: the rest of the world has seen our weakness."
+ ph_propaganda.9.a:0 "We have been measured, and have been found wanting."
+ ph_propaganda.9.f:0 "“Yes, ladies and gentlemen, I address those most dangerous of scoundrels, those most notorious of thieves, unscrupulous of cheats! I speak of those who hide behind the cross of Christ, those who shield themselves with kingly authority, those from whose every pore yet spills forth a most damnable rot. Need I say, my fellow countrymen, what one must do to treat a rotting limb?“"
+
+ph_propaganda_random.1.t:0 "The Propaganda Movement: Swing the Rod, Scour the Child"
+ph_propaganda_random.1.d:0 "A rumor circulating among the people has the [SCOPE.gsInterestGroup('rural_folk_ig').GetName] concerned. If the allegations are to be believed, a local town curate took it upon himself to punish a suspected thief with his own hands without a shred of evidence... that suspect being a young child, one working at the priest's church, at that. While corporal punishment is not unusual, what's concerning is that the child has not been seen nor heard from since. The [SCOPE.gsInterestGroup('devout_ig').GetName], meanwhile, demand that we pay no heed to the idle ramblings of peasants."
+ph_propaganda_random.1.a:0 "Of course the [SCOPE.gsInterestGroup('rural_folk_ig').GetName] deserve justice."
+ph_propaganda_random.1.b:0 "Let's not touch it and risk upsetting the [SCOPE.gsInterestGroup('devout_ig').GetName]."
+ph_propaganda_random.1.f:0 "“Even though the boy's mother has completely lost her mind, some say she's still looking for her kid, even now. In fact, I heard that her kid's name is the only coherent word that comes out of her mouth, nowadays.“\n\n“My word! If even our children can't feel safe in a house of God, where *can* we feel safe?“"
+
+ph_propaganda_random.2.t:0 "The Propaganda Movement: A Friar's Indiscretions"
+ph_propaganda_random.2.d:0 "An army officer has brought before us a rather distraught-looking nun, one whom he says was screaming for help atop the roof of a local convent. Identifying herself as Sister [SCOPE.sCharacter('sor_pepita').GetFullName] of the Santa Clara convent, she levels a number of unsavory accusations at [SCOPE.sCharacter('devout_leader').GetFullName], de-facto leader of the [SCOPE.gsInterestGroup('devout_ig').GetName]."
+ph_propaganda_random.2.a:0 "Remove [SCOPE.sCharacter('devout_leader').GetFullName] from office. No one is above the law."
+ph_propaganda_random.2.b:0 "It would be useful to have the [SCOPE.gsInterestGroup('devout_ig').GetName] in our debt."
+ph_propaganda_random.2.f:0 "“Cicero once said, addressing the Senate, that the sword of the soldier must yield to the toga of the senator. [SCOPE.sCharacter('devout_leader').GetFullName] certainly thinks the cassock of the priest even greater, but he forgets that which Christ brought with him, instead of peace.“"
