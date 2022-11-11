@@ -12,6 +12,7 @@ STATES = {
 		add_homeland = ilocano
 		add_homeland = cordilleran
 		add_homeland = palaweno
+		add_homeland = mestizo
 	}
 	s:STATE_VISAYAS = {
 		remove_homeland = filipino

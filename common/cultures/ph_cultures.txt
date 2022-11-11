@@ -456,7 +456,6 @@ insular={
 		1 = caucasian
 	}
 	graphics = generic
-	custom_tooltip = insular_tooltip
 }
 moro={
 	color= hsv{ 0.41 0.80 0.60 }

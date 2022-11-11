@@ -168,6 +168,87 @@ ph_propaganda.6 = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 
+	immediate = {
+		
+		random_list = {
+			33 = {
+				set_variable = is_gom
+			}
+			33 = {
+				set_variable = is_bur
+			}
+			33 = {
+				set_variable = is_za
+			}
+			1 = {}
+		}
+
+		random_scope_culture = {
+			limit = { 
+				has_discrimination_trait = philippine_culture_group 
+				NOT = {
+					is_primary_culture_of = ROOT
+				}
+			}
+			save_scope_as = gomburza_culture
+		}
+		
+		if = {
+			limit = {
+				has_variable = is_gom
+			}
+			create_character = {
+				first_name = "Mariano"
+				last_name = "Gomes_de_los_Angeles"
+				culture = scope:gomburza_culture
+				interest_group = ig_devout
+				ideology = ideology_radical
+				ig_leader = yes
+				save_scope_as = gomburza
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = is_bur
+			}
+			create_character = {
+				first_name = "Jose_Apolonio"
+				last_name = "Burgos_y_Garcia"
+				culture = scope:gomburza_culture
+				interest_group = ig_devout
+				ideology = ideology_radical
+				ig_leader = yes
+				save_scope_as = gomburza
+			}
+		}
+		else_if = {
+			limit = {
+				has_variable = is_za
+			}
+			create_character = {
+				first_name = "Jacinto"
+				last_name = "Zamora_y_del_Rosario"
+				culture = scope:gomburza_culture
+				interest_group = ig_devout
+				ideology = ideology_radical
+				ig_leader = yes
+				save_scope_as = gomburza
+			}
+		}
+		else = {
+			create_character = {
+				culture = scope:gomburza_culture
+				interest_group = ig_devout
+				ideology = ideology_radical
+				ig_leader = yes
+				save_scope_as = gomburza
+			}
+		}
+			
+		
+
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/world_fair"
@@ -191,6 +272,10 @@ ph_propaganda.6 = {
 			name = ph_propaganda_movement_var
 			add = 1
 		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}  # We've dismantled the monopoly on church affairs...
 	}
 }
 
@@ -281,7 +366,7 @@ ph_propaganda.7 = {
 				last_name = "del_Pilar"
 				culture = scope:solidaridad_founder_culture
 				interest_group = ig_intelligentsia
-				ideology = ideology_reformer
+				ideology = ideology_radical
 				ig_leader = yes
 				save_scope_as = propagandista
 			}
@@ -296,7 +381,7 @@ ph_propaganda.7 = {
 				last_name = "Lopez_Jaena"
 				culture = scope:solidaridad_founder_culture
 				interest_group = ig_intelligentsia
-				ideology = ideology_reformer
+				ideology = ideology_radical
 				ig_leader = yes
 				save_scope_as = propagandista
 			}
@@ -311,7 +396,7 @@ ph_propaganda.7 = {
 				last_name = "Rizal"
 				culture = scope:solidaridad_founder_culture
 				interest_group = ig_intelligentsia
-				ideology = ideology_reformer
+				ideology = ideology_radical
 				ig_leader = yes
 				save_scope_as = propagandista
 			}
