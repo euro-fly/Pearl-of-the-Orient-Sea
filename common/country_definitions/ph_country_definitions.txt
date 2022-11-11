@@ -4,7 +4,7 @@
 	country_type = colonial
 	
 	tier = kingdom
-	
+	# Mestizo and Insular are both primary so that Mestizos don't just assimilate into being Insular
 	cultures = { insular mestizo }
 	capital = STATE_LUZON
 }

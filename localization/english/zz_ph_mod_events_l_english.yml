@@ -43,7 +43,7 @@
  ph_propaganda.8.a:0 "The people do not complain, because they have no voice."
  ph_propaganda.8.f:0 "“It is with a heavy heart we must announce that we are suspending our publication effective immediately. Through the circulation of this paper, we wished dearly to see our words carry on to give rise to a nation of equals, the stringent efforts of reactionaries at home and abroad have forced our hand. Though we know not the day or the hour of our return, our most fervent wish remains as ever: the liberation of a land and her people long kept in bondage. To that end, no sacrifice is too small, and no struggle devoid of meaning.“"
 
- ph_propaganda.9.t:0 "The Propaganda Movement: Mane, Thecel, Phares"
+ ph_propaganda.9.t:0 "The Propaganda Movement: Writing on the Wall"
  ph_propaganda.9.d:0 "Try though we might, our attempt at keeping the peace in [SCOPE.GetRootScope.GetCountry.GetName] were in vain. Despite our best efforts, all we have to show for them is our continued inability to keep the restless locals in place. Government officials point fingers at each other, blaming this or that initiative. Though the halls of government are rife with confusion, one thing is clear: the rest of the world has seen our weakness."
  ph_propaganda.9.a:0 "We have been measured, and have been found wanting."
  ph_propaganda.9.f:0 "“Yes, ladies and gentlemen, I address those most dangerous of scoundrels, those most notorious of thieves, unscrupulous of cheats! I speak of those who hide behind the cross of Christ, those who shield themselves with kingly authority, those from whose every pore yet spills forth a most damnable rot. Need I say, my fellow countrymen, what one must do to treat a rotting limb?“"
@@ -64,21 +64,21 @@ la_liga.0.t:0 "The Propaganda Movement: A Pile of Secrets"
 la_liga.0.d:0 "A disheveled [SCOPE.sCulture('interrogate_character_culture').GetName] [SCOPE.sCharacter('interrogate_character').GetManWoman] charged with embezzlement and treason is scheduled to receive [SCOPE.sCharacter('interrogate_character').GetHisHer] sentencing today. We could have [SCOPE.sCharacter('interrogate_character').GetHimHer] put to death in short order, to serve as an example to any would-be subversives, but others wonder if [SCOPE.sCharacter('interrogate_character').GetManWoman] might be but a small part of a bigger conspiracy."
 la_liga.0.a:0 "If there is something [SCOPE.sCharacter('interrogate_character').GetHeShe] knows, we will know it."
 la_liga.0.b:0 "Conspiracy theories are for the superstitious and cowardly."
-la_liga.0.f:0 "“As I keep telling you, the [SCOPE.sCharacter('interrogate_character').GetManWoman] is valuable. Is it not said that a [SCOPE.sCharacter('interrogate_character').GetManWoman] is what [SCOPE.sCharacter('interrogate_character').GetHeShe] hides?“\n\n“What, then, if all [SCOPE.sCharacter('interrogate_character').GetHeShe] hides is just a pile of rubbish?“"
+la_liga.0.f:0 "“As I keep telling you, the [SCOPE.sCharacter('interrogate_character').GetManWoman] is valuable. Is it not said that a [SCOPE.sCharacter('interrogate_character').GetManWoman] is what [SCOPE.sCharacter('interrogate_character').GetHeShe] hides?“\n\n“What, then, if all [SCOPE.sCharacter('interrogate_character').GetHeShe] is, is just a pile of nothing?“"
 la_liga_execution_tooltip:0 "Silencing this [SCOPE.sCharacter('interrogate_character').GetManWoman] permanently would certainly send a message, but if [SCOPE.sCharacter('interrogate_character').GetHeShe] knows something, it would die with [SCOPE.sCharacter('interrogate_character').GetHimHer]."
 la_liga_interrogation_tooltip:0 "While showing clemency would perhaps embolden these subversives, the information that this [SCOPE.sCharacter('interrogate_character').GetManWoman] could give us would potentially allow us to remain a step ahead of their plans. There is, of course, the possibility that [SCOPE.sCharacter('interrogate_character').GetHeShe] knows nothing useful."
 
 la_liga.1.t:0 "The Philippine League: Conspiracy"
 la_liga.1.d:0 "Though it seems almost farcical to even consider, we have uncovered undeniable evidence of a clandestine organization operating in [SCOPE.GetRootScope.GetCountry.GetName]. Though details are scarce, the nature of the investigation into these radical subversives will necessitate some amount of bureaucratic maneuvering."
 la_liga.1.a:0 "This is concerning."
-la_liga.1.f:0 "“Please, speak loudly for the court: are you now, or have you ever been, a member of the secretive political organization known as the Philippine League?“"
+la_liga.1.f:0 "“Please, speak loudly for the court: are you now, or have you ever been, a member of the secretive political organization known as the Liga Filipina?“"
 la_liga_conspiracy_tooltip:0 "We will devote some percentage of our bureaucratic apparatus for the duration of our active investigation into the Philippine League."
 
 la_liga.2.t:0 "The Philippine League: Pens Sharper Than Swords"
-la_liga.2.d:0 "One of the prominent members of the [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] associated with the Propaganda Movement has recently come under fire for [SCOPE.sCharacter('rizal').GetHisHer] authorial pursuits. A number of the symbols employed in the [SCOPE.sCharacter('rizal').GetManWoman]'s books are thinly-veiled critiques of our government."
+la_liga.2.d:0 "One of the prominent members of the [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] associated with the Propaganda Movement, [SCOPE.sCharacter('rizal').GetFullName], has recently come under fire for [SCOPE.sCharacter('rizal').GetHisHer] authorial pursuits. A number of the symbols employed in the [SCOPE.sCharacter('rizal').GetManWoman]'s books are thinly-veiled critiques of our government."
 la_liga.2.a:0 "How dare [SCOPE.sCharacter('rizal').GetHeShe]! Ban those books immediately!"
-la_liga.2.b:0 "Banning books, when scarcely anyone here can read? Preposterous."
-la_liga.2.f:0 "“Are you now, or have you ever been, a member of the clandestine political organization known as the Philippine League?“"
+la_liga.2.b:0 "Burning books, in this day and age? Preposterous."
+la_liga.2.f:0 "“Are you now, or have you ever been, a member of the clandestine political organization known as the Liga Filipina?“"
 la_liga_conspiracy_tooltip:0 "We will gain opportunities to invest resources in ending this conspiracy."
 
 la_liga.3.t:0 "The Philippine League: A Clergy Divided"
@@ -87,8 +87,18 @@ la_liga.3.a:0 "Time to get... creative."
 la_liga.3.b:0 "The [SCOPE.gsInterestGroup('devout_ig').GetName] will have to deal with this matter on their own."
 la_liga.3.f:0 "“The church, by refusing to degrade you, has placed in doubt the crime that has been imputed to you; the government, by surrounding your trials with mystery and shadows causes the belief that there was some error, committed in fatal moments; and all the Philippines, by worshiping your memory and calling you martyrs, in no sense recognizes your capability.“"
 
-la_liga.4.t:0 "The Philippine League: Author in Chains"
-la_liga.4:d:0 "We've identified evidence conclusively tying [SCOPE.sCharacter('rizal').GetFullName] to the Philippine League, and have successfully taken [SCOPE.sCharacter('rizal').GetHimHer] in for questioning. Unfortunately, [SCOPE.sCharacter('rizal').GetHeShe] has no intention of cooperating, and insists that none of the League's activities were actually criminal in nature. While it is certainly true that we have no evidence directly tying the League to anything concrete, some in government would rather nip the problem in the bud, even if it means being somewhat liberal with our legal apparatus."
-la_liga.4.a:0 ""
-la_liga.4.b:0 ""
-la_liga.4.f:0 ""
+la_liga.4.t:0 "The Philippine League: Flowers of Sedition"
+la_liga.4:d:0 "We've identified evidence conclusively tying [SCOPE.sCharacter('rizal').GetFullName] to the Philippine League, and after monitoring his whereabouts over the past few days, our officers have successfully taken [SCOPE.sCharacter('rizal').GetHimHer] into custody. Far from the hardened revolutionary some of the more fearful in government thought [SCOPE.sCharacter('rizal').GetHimHer] to be, [SCOPE.sCharacter('rizal').GetFullName] is exactly what our files describe: a mere author and poet; one who maintains [SCOPE.sCharacter('rizal').GetHisHer] own innocence, at that.\n\nWithout any tangible evidence to the contrary, could [SCOPE.sCharacter('rizal').GetFullName] really be the conspirator we were looking for?"
+la_liga.4.a:0 "It is no matter. Tear [SCOPE.sCharacter('rizal').GetHimHer] for his bad verses."
+la_liga.4.b:0 "Perhaps we should let [SCOPE.sCharacter('rizal').GetHimHer] stew in exile for a while."
+la_liga.4.f:0 "“All we want, gentlemen, is for your government to relieve our people of the myriad indignities visited upon us; we do not yearn to bite the hand that feeds, we merely wish to be fed our fair share. I ask of you, do we not kneel before the same crown, before the same cross? Have we not yet outgrown the need to classify ourselves by our shells?“"
+
+la_liga.5.t:0 "The Philippine League: Mane"
+la_liga.5.d:0 ""
+
+
+la_liga.6.t:0 "The Philippine League: Thecel"
+
+
+la_liga.7.t:0 "The Philippine League: Phares"
+

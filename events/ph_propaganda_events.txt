@@ -28,6 +28,21 @@ ph_propaganda.2 = {
 			set_country_type = recognized  # We're not a colony, we're a full province with diplomatic autonomy
 		}
 	}
+
+	option = {
+		name = ph_propaganda.2.b
+
+		this = {
+			top_overlord = {
+				save_scope_as = overlord_country
+			}
+		}
+		create_diplomatic_play = {
+			target_country: scope:overlord_country
+			type = dp_independence
+		}
+
+	}
 }
 
 # Propaganda Movement fails
